@@ -17,6 +17,7 @@
 - (void) viewDidLoad{
     [super viewDidLoad];
     index = 0;
+    ispaused = true;
     timercount = 0;
     //_stepper = [[UIStepper alloc] init];
     _stepper.maximumValue = 20;
@@ -115,11 +116,11 @@
     index = 0;
 }
 -(void) highlight{
-    UIFont *boldText = [UIFont boldSystemFontOfSize:30];
+    //UIFont *boldText = [UIFont boldSystemFontOfSize:30];
     NSNumber* underlineNumber = [NSNumber numberWithInteger:NSUnderlineStyleThick];
     current = story[page][wordindex];
     [line removeAttribute:NSForegroundColorAttributeName range:highLightAt];
-    [line removeAttribute:NSFontAttributeName range:highLightAt];
+    //[line removeAttribute:NSFontAttributeName range:highLightAt];
     [line removeAttribute:NSUnderlineStyleAttributeName range:highLightAt];
     [line removeAttribute:NSUnderlineColorAttributeName range:highLightAt];
     highLightAt = NSMakeRange(index,current.length);
@@ -130,7 +131,7 @@
         index += current.length;
     }
     [line addAttribute:NSForegroundColorAttributeName value:[UIColor blackColor] range:highLightAt];
-    [line addAttribute:NSFontAttributeName value:boldText range:highLightAt];
+    //[line addAttribute:NSFontAttributeName value:boldText range:highLightAt];
     [line addAttribute:NSUnderlineStyleAttributeName value:underlineNumber range:highLightAt];
     [line addAttribute:NSUnderlineColorAttributeName value:[UIColor colorWithRed:141.0f/255.0f
                                                                                     green:202.0f/255.0f

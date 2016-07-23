@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14F1808" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="ge4-Dx-ehc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="ge4-Dx-ehc">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
@@ -77,7 +78,7 @@
                                 <state key="highlighted" image="playgreen.png"/>
                                 <connections>
                                     <action selector="start" destination="ge4-Dx-ehc" eventType="touchUpInside" id="nwN-pE-1nn"/>
-                                    <segue destination="4Bs-zU-3D2" kind="show" id="0zq-JO-ibt"/>
+                                    <segue destination="GCR-dN-IVJ" kind="show" id="vgM-AC-5LI"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -189,6 +190,33 @@
             </objects>
             <point key="canvasLocation" x="130" y="-536"/>
         </scene>
+        <!--Menu View Controller-->
+        <scene sceneID="177-Xh-dfN">
+            <objects>
+                <viewController id="GCR-dN-IVJ" customClass="MenuViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="0eE-7n-OaB"/>
+                        <viewControllerLayoutGuide type="bottom" id="mf7-oU-0PF"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="EIq-hp-4j1">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Og-4W-TAu">
+                                <rect key="frame" x="246" y="80" width="46" height="30"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <segue destination="4Bs-zU-3D2" kind="show" id="md7-hm-PrH"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2zy-jw-LCs" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="592" y="-1239"/>
+        </scene>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
@@ -201,7 +229,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="ZNk-PH-JsI">
+                            <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="ZNk-PH-JsI">
                                 <rect key="frame" x="48" y="500" width="94" height="29"/>
                                 <connections>
                                     <action selector="controlspeed" destination="BYZ-38-t0r" eventType="valueChanged" id="D50-Wj-OHE"/>
@@ -281,7 +309,7 @@
                                     <constraint firstAttribute="width" constant="50" id="8hr-2r-PID"/>
                                     <constraint firstAttribute="height" constant="50" id="cFL-LZ-VF8"/>
                                 </constraints>
-                                <state key="normal" image="pause.png">
+                                <state key="normal" image="play.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <state key="disabled" image="pause.png"/>
@@ -303,13 +331,13 @@
                                 </attributedString>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="w3L-GU-VMJ">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="w3L-GU-VMJ">
                                 <rect key="frame" x="295" y="20" width="46" height="30"/>
                                 <state key="normal" title="Button">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="srE-tU-SF4" kind="show" identifier="endstory" id="ClE-u4-T4q"/>
+                                    <segue destination="GCR-dN-IVJ" kind="show" identifier="quit" id="jmO-rI-eUb"/>
                                 </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="bopeep1.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="i4X-Me-Mb3">
@@ -384,6 +412,7 @@
                         <outlet property="prev2" destination="yNf-5J-9gu" id="Vbt-mb-Sy3"/>
                         <outlet property="stepper" destination="ZNk-PH-JsI" id="gwR-wu-MXo"/>
                         <outlet property="timelabel" destination="C75-Va-rfX" id="OPw-M9-iyQ"/>
+                        <segue destination="srE-tU-SF4" kind="show" identifier="endstory" id="zGL-B1-TrH"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -493,6 +522,7 @@
         <image name="next.png" width="400" height="400"/>
         <image name="next2.png" width="400" height="400"/>
         <image name="pause.png" width="400" height="400"/>
+        <image name="play.png" width="400" height="400"/>
         <image name="playblackhollow.png" width="480" height="480"/>
         <image name="playgreen.png" width="480" height="480"/>
         <image name="prev.png" width="400" height="400"/>
@@ -501,6 +531,7 @@
         <image name="replay.png" width="400" height="400"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="VDI-hp-gUk"/>
+        <segue reference="md7-hm-PrH"/>
+        <segue reference="jmO-rI-eUb"/>
     </inferredMetricsTieBreakers>
 </document>
