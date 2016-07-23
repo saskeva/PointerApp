@@ -7,6 +7,8 @@
 //
 
 #import "ViewController.h"
+#import "EndViewController.h"
+#import "MenuViewController.h"
 
 @interface ViewController ()
 
@@ -22,7 +24,10 @@
     //_stepper = [[UIStepper alloc] init];
     _stepper.maximumValue = 20;
     _stepper.minimumValue = 1;
-    _stepper.value = 10.0;
+    if(_speed >=1.0 && _speed <= 20.0)
+        _stepper.value = _speed;
+    else
+        _stepper.value = 10.0;
     [_timelabel setText:[NSString stringWithFormat:@"%0.2f secs", _stepper.value/10]];
     myTimer = [NSTimer scheduledTimerWithTimeInterval:(0.10) target:self selector:@selector(onTimer) userInfo:nil repeats:YES];
     highLightAt = NSMakeRange(0,0);
@@ -233,5 +238,14 @@
 -(IBAction)endstory{
     //[self performSegueWithIdentifier:@"EndStory" sender:self];
 }
-
+-(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
+    if([segue.identifier isEqualToString:@"endstory"]){
+        EndViewController *controller = (EndViewController *)segue.destinationViewController;
+        controller.speed = _stepper.value;
+    }
+    else if([segue.identifier isEqualToString:@"quit"]){
+        MenuViewController *controller = (MenuViewController *)segue.destinationViewController;
+        controller.speed = _stepper.value;
+    }
+}
 @end

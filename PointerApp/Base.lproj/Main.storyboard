@@ -150,7 +150,7 @@
                                 <state key="selected" image="playblackhollow.png"/>
                                 <state key="highlighted" image="playblackhollow.png"/>
                                 <connections>
-                                    <segue destination="BYZ-38-t0r" kind="show" id="HzX-od-jSV"/>
+                                    <segue destination="BYZ-38-t0r" kind="show" identifier="startstory" id="HzX-od-jSV"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mvf-Ec-PCi">
@@ -206,7 +206,7 @@
                                 <rect key="frame" x="246" y="80" width="46" height="30"/>
                                 <state key="normal" title="Button"/>
                                 <connections>
-                                    <segue destination="4Bs-zU-3D2" kind="show" id="md7-hm-PrH"/>
+                                    <segue destination="4Bs-zU-3D2" kind="show" identifier="bookchosen" id="md7-hm-PrH"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -444,7 +444,7 @@
                                 <state key="selected" image="home.png"/>
                                 <state key="highlighted" image="home.png"/>
                                 <connections>
-                                    <segue destination="ge4-Dx-ehc" kind="show" id="EFm-kh-23G"/>
+                                    <segue destination="GCR-dN-IVJ" kind="show" identifier="return" id="PwP-Xl-Pb1"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vWY-3E-j54">
@@ -460,7 +460,7 @@
                                 <state key="selected" image="replay.png"/>
                                 <state key="highlighted" image="replay.png"/>
                                 <connections>
-                                    <segue destination="4Bs-zU-3D2" kind="show" id="VDI-hp-gUk"/>
+                                    <segue destination="4Bs-zU-3D2" kind="show" identifier="replay" id="VDI-hp-gUk"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Y6O-rE-qc7">
@@ -531,7 +531,7 @@
         <image name="replay.png" width="400" height="400"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="md7-hm-PrH"/>
-        <segue reference="jmO-rI-eUb"/>
+        <segue reference="VDI-hp-gUk"/>
+        <segue reference="PwP-Xl-Pb1"/>
     </inferredMetricsTieBreakers>
 </document>

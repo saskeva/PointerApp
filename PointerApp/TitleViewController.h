@@ -11,6 +11,6 @@
 
 @interface TitleViewController : UIViewController{
 }
-
+@property(nonatomic) double speed;
 
 @end

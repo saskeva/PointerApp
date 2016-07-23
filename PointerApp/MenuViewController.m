@@ -8,6 +8,7 @@
 
 #import "MenuViewController.h"
 #import "ViewController.h"
+#import "TitleViewController.h"
 
 @interface MenuViewController ()
 
@@ -26,6 +27,11 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
-
+-(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
+    if([segue.identifier isEqualToString:@"bookchosen"]){
+        TitleViewController *controller = (TitleViewController *)segue.destinationViewController;
+        controller.speed = _speed;
+    }
+}
 @end
 

@@ -22,7 +22,7 @@
     int count;
     int timercount;
 }
-
+@property(nonatomic) double speed;
 @property (weak, nonatomic) IBOutlet UILabel *label;
 @property (weak, nonatomic) IBOutlet UILabel *timelabel;
 @property (weak, nonatomic) IBOutlet UIImageView *image;

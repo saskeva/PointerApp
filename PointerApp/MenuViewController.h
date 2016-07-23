@@ -11,6 +11,7 @@
 
 @interface MenuViewController : UIViewController{
 }
+@property(nonatomic) double speed;
 @property (weak, nonatomic) IBOutlet UILabel *label;
 @property (weak, nonatomic) IBOutlet UIButton *button;
 

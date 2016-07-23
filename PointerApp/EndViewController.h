@@ -11,6 +11,6 @@
 
 @interface EndViewController : UIViewController{
 }
-
+@property(nonatomic) double speed;
 
 @end
