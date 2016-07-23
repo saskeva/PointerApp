@@ -22,13 +22,9 @@
     ispaused = true;
     timercount = 0;
     //_stepper = [[UIStepper alloc] init];
-    _stepper.maximumValue = 20;
-    _stepper.minimumValue = 1;
-    if(_speed >=1.0 && _speed <= 20.0)
-        _stepper.value = _speed;
-    else
-        _stepper.value = 10.0;
-    [_timelabel setText:[NSString stringWithFormat:@"%0.2f secs", _stepper.value/10]];
+    if(_speed < 1.0 || _speed > 20.0)
+        _speed = 10;
+    [_timelabel setText:[NSString stringWithFormat:@"%0.2f secs", _speed/10]];
     myTimer = [NSTimer scheduledTimerWithTimeInterval:(0.10) target:self selector:@selector(onTimer) userInfo:nil repeats:YES];
     highLightAt = NSMakeRange(0,0);
     current = @"";
@@ -71,7 +67,7 @@
         //do nothing
     }
     else{
-        if(timercount < _stepper.value) {
+        if(timercount < _speed) {
             timercount = timercount + 1;
         }
         else{
@@ -230,22 +226,33 @@
     [self performSelector:@selector(nextPage)];
     [self performSelector:@selector(nextWord)];
 }
-- (IBAction)controlspeed/*:(UIStepper *) sender*/{
-    // Do any additional setup after loading the view, typically from a nib.
-    [_timelabel setText:[NSString stringWithFormat:@"%0.2f secs", _stepper.value/10]];
-}
 
 -(IBAction)endstory{
     //[self performSegueWithIdentifier:@"EndStory" sender:self];
 }
+
+-(IBAction)speedup{
+    if(_speed < 20){
+        _speed = _speed + 1;
+        [_timelabel setText:[NSString stringWithFormat:@"%0.2f secs", _speed/10]];
+    }
+}
+
+-(IBAction)speeddown{
+    if(_speed > 1){
+        _speed = _speed - 1;
+        [_timelabel setText:[NSString stringWithFormat:@"%0.2f secs", _speed/10]];
+    }
+}
+
 -(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
     if([segue.identifier isEqualToString:@"endstory"]){
         EndViewController *controller = (EndViewController *)segue.destinationViewController;
-        controller.speed = _stepper.value;
+        controller.speed = _speed;
     }
     else if([segue.identifier isEqualToString:@"quit"]){
         MenuViewController *controller = (MenuViewController *)segue.destinationViewController;
-        controller.speed = _stepper.value;
+        controller.speed = _speed;
     }
 }
 @end

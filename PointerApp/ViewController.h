@@ -47,6 +47,11 @@
 @property (strong, nonatomic) IBOutlet UIStepper *stepper;
 -(IBAction)controlspeed/*:(UIStepper *) sender*/;
 
+@property (weak, nonatomic) IBOutlet UIButton *stepperup;
+-(IBAction)speedup;
+
+@property (weak, nonatomic) IBOutlet UIButton *stepperdown;
+-(IBAction)speeddown;
 
 @end
 
