@@ -19,6 +19,15 @@
 		3FB590A61D4E901F00E91192 /* kingarthur2.png in Resources */ = {isa = PBXBuildFile; fileRef = 3FB590A21D4E901F00E91192 /* kingarthur2.png */; };
 		3FB590A71D4E901F00E91192 /* littleman1.png in Resources */ = {isa = PBXBuildFile; fileRef = 3FB590A31D4E901F00E91192 /* littleman1.png */; };
 		3FB590A81D4E901F00E91192 /* littleman2.png in Resources */ = {isa = PBXBuildFile; fileRef = 3FB590A41D4E901F00E91192 /* littleman2.png */; };
+		3FB590B51D4E9D4A00E91192 /* bookiconhighlighted.png in Resources */ = {isa = PBXBuildFile; fileRef = 3FB590AC1D4E9D4A00E91192 /* bookiconhighlighted.png */; };
+		3FB590B61D4E9D4A00E91192 /* next2highlighted.png in Resources */ = {isa = PBXBuildFile; fileRef = 3FB590AD1D4E9D4A00E91192 /* next2highlighted.png */; };
+		3FB590B71D4E9D4A00E91192 /* nexthighlighted.png in Resources */ = {isa = PBXBuildFile; fileRef = 3FB590AE1D4E9D4A00E91192 /* nexthighlighted.png */; };
+		3FB590B81D4E9D4A00E91192 /* pausehighlighted.png in Resources */ = {isa = PBXBuildFile; fileRef = 3FB590AF1D4E9D4A00E91192 /* pausehighlighted.png */; };
+		3FB590B91D4E9D4A00E91192 /* play iconhighlighted.png in Resources */ = {isa = PBXBuildFile; fileRef = 3FB590B01D4E9D4A00E91192 /* play iconhighlighted.png */; };
+		3FB590BA1D4E9D4A00E91192 /* playhighlighted.png in Resources */ = {isa = PBXBuildFile; fileRef = 3FB590B11D4E9D4A00E91192 /* playhighlighted.png */; };
+		3FB590BB1D4E9D4A00E91192 /* prev2highlighted.png in Resources */ = {isa = PBXBuildFile; fileRef = 3FB590B21D4E9D4A00E91192 /* prev2highlighted.png */; };
+		3FB590BC1D4E9D4A00E91192 /* prevhighlighted.png in Resources */ = {isa = PBXBuildFile; fileRef = 3FB590B31D4E9D4A00E91192 /* prevhighlighted.png */; };
+		3FB590BD1D4E9D4A00E91192 /* xbuttonhighlighted.png in Resources */ = {isa = PBXBuildFile; fileRef = 3FB590B41D4E9D4A00E91192 /* xbuttonhighlighted.png */; };
 		3FCC43921D43E5C000F123E1 /* bookicon.png in Resources */ = {isa = PBXBuildFile; fileRef = 3FCC438E1D43E5C000F123E1 /* bookicon.png */; };
 		3FCC43931D43E5C000F123E1 /* stepperdown.png in Resources */ = {isa = PBXBuildFile; fileRef = 3FCC438F1D43E5C000F123E1 /* stepperdown.png */; };
 		3FCC43941D43E5C000F123E1 /* stepperup.png in Resources */ = {isa = PBXBuildFile; fileRef = 3FCC43901D43E5C000F123E1 /* stepperup.png */; };
@@ -73,6 +82,15 @@
 		3FB590A21D4E901F00E91192 /* kingarthur2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = kingarthur2.png; sourceTree = "<group>"; };
 		3FB590A31D4E901F00E91192 /* littleman1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = littleman1.png; sourceTree = "<group>"; };
 		3FB590A41D4E901F00E91192 /* littleman2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = littleman2.png; sourceTree = "<group>"; };
+		3FB590AC1D4E9D4A00E91192 /* bookiconhighlighted.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bookiconhighlighted.png; sourceTree = "<group>"; };
+		3FB590AD1D4E9D4A00E91192 /* next2highlighted.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = next2highlighted.png; sourceTree = "<group>"; };
+		3FB590AE1D4E9D4A00E91192 /* nexthighlighted.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = nexthighlighted.png; sourceTree = "<group>"; };
+		3FB590AF1D4E9D4A00E91192 /* pausehighlighted.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pausehighlighted.png; sourceTree = "<group>"; };
+		3FB590B01D4E9D4A00E91192 /* play iconhighlighted.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "play iconhighlighted.png"; sourceTree = "<group>"; };
+		3FB590B11D4E9D4A00E91192 /* playhighlighted.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = playhighlighted.png; sourceTree = "<group>"; };
+		3FB590B21D4E9D4A00E91192 /* prev2highlighted.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = prev2highlighted.png; sourceTree = "<group>"; };
+		3FB590B31D4E9D4A00E91192 /* prevhighlighted.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = prevhighlighted.png; sourceTree = "<group>"; };
+		3FB590B41D4E9D4A00E91192 /* xbuttonhighlighted.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = xbuttonhighlighted.png; sourceTree = "<group>"; };
 		3FCC438E1D43E5C000F123E1 /* bookicon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bookicon.png; sourceTree = "<group>"; };
 		3FCC438F1D43E5C000F123E1 /* stepperdown.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = stepperdown.png; sourceTree = "<group>"; };
 		3FCC43901D43E5C000F123E1 /* stepperup.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = stepperup.png; sourceTree = "<group>"; };
@@ -203,6 +221,15 @@
 		CAE61ED41D4E831F0049F0B8 /* buttons */ = {
 			isa = PBXGroup;
 			children = (
+				3FB590AC1D4E9D4A00E91192 /* bookiconhighlighted.png */,
+				3FB590AD1D4E9D4A00E91192 /* next2highlighted.png */,
+				3FB590AE1D4E9D4A00E91192 /* nexthighlighted.png */,
+				3FB590AF1D4E9D4A00E91192 /* pausehighlighted.png */,
+				3FB590B01D4E9D4A00E91192 /* play iconhighlighted.png */,
+				3FB590B11D4E9D4A00E91192 /* playhighlighted.png */,
+				3FB590B21D4E9D4A00E91192 /* prev2highlighted.png */,
+				3FB590B31D4E9D4A00E91192 /* prevhighlighted.png */,
+				3FB590B41D4E9D4A00E91192 /* xbuttonhighlighted.png */,
 				3FCC438E1D43E5C000F123E1 /* bookicon.png */,
 				3FCC438F1D43E5C000F123E1 /* stepperdown.png */,
 				3FCC43901D43E5C000F123E1 /* stepperup.png */,
@@ -308,6 +335,7 @@
 				TargetAttributes = {
 					3F327AA01D04CB5C00AEA340 = {
 						CreatedOnToolsVersion = 6.3.2;
+						DevelopmentTeam = 8TD3W8MSRP;
 					};
 					3F327AB91D04CB5C00AEA340 = {
 						CreatedOnToolsVersion = 6.3.2;
@@ -342,25 +370,34 @@
 				3F327AB01D04CB5C00AEA340 /* Main.storyboard in Resources */,
 				3FCC43951D43E5C000F123E1 /* xbutton.png in Resources */,
 				3FB590A61D4E901F00E91192 /* kingarthur2.png in Resources */,
+				3FB590B51D4E9D4A00E91192 /* bookiconhighlighted.png in Resources */,
 				3FCCCAC21D32F0E100D4AF56 /* background.png in Resources */,
 				3FCCCA901D1615FB00D4AF56 /* bopeep1.jpg in Resources */,
+				3FB590BD1D4E9D4A00E91192 /* xbuttonhighlighted.png in Resources */,
 				3FB590A81D4E901F00E91192 /* littleman2.png in Resources */,
 				3FCC43921D43E5C000F123E1 /* bookicon.png in Resources */,
 				3FCCCABF1D32EC6D00D4AF56 /* playblackhollow.png in Resources */,
 				3FCCCAAC1D319A2100D4AF56 /* next.png in Resources */,
+				3FB590B71D4E9D4A00E91192 /* nexthighlighted.png in Resources */,
+				3FB590B91D4E9D4A00E91192 /* play iconhighlighted.png in Resources */,
 				3FB590A51D4E901F00E91192 /* kingarthur1.png in Resources */,
 				3FCCCABD1D32EC6D00D4AF56 /* home.png in Resources */,
 				3FCCCAAE1D319A2100D4AF56 /* pause.png in Resources */,
 				3FB590A71D4E901F00E91192 /* littleman1.png in Resources */,
+				3FB590B81D4E9D4A00E91192 /* pausehighlighted.png in Resources */,
+				3FB590BC1D4E9D4A00E91192 /* prevhighlighted.png in Resources */,
 				3FCCCAAF1D319A2100D4AF56 /* play.png in Resources */,
 				3F327AB51D04CB5C00AEA340 /* LaunchScreen.xib in Resources */,
+				3FB590BA1D4E9D4A00E91192 /* playhighlighted.png in Resources */,
 				3F3C62151D32F9B600637664 /* launch.png in Resources */,
+				3FB590BB1D4E9D4A00E91192 /* prev2highlighted.png in Resources */,
 				3FCCCAAD1D319A2100D4AF56 /* next2.png in Resources */,
 				3FCCCA921D1615FB00D4AF56 /* bopeep3.jpg in Resources */,
 				3FCCCAB11D319A2100D4AF56 /* prev.png in Resources */,
 				3F327AB21D04CB5C00AEA340 /* Images.xcassets in Resources */,
 				3FCCCABE1D32EC6D00D4AF56 /* menulogo.png in Resources */,
 				3FCCCAC01D32EC6D00D4AF56 /* replay.png in Resources */,
+				3FB590B61D4E9D4A00E91192 /* next2highlighted.png in Resources */,
 				3FCCCA911D1615FB00D4AF56 /* bopeep2.jpg in Resources */,
 				3FCCCAB01D319A2100D4AF56 /* playgreen.png in Resources */,
 				3FCC43931D43E5C000F123E1 /* stepperdown.png in Resources */,
@@ -518,10 +555,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = PointerApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "lou.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -529,10 +569,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = PointerApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "lou.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
