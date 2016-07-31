@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="ge4-Dx-ehc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="ge4-Dx-ehc">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
@@ -75,7 +75,7 @@
                                 </state>
                                 <state key="disabled" image="playgreen.png"/>
                                 <state key="selected" image="playgreen.png"/>
-                                <state key="highlighted" image="playgreen.png"/>
+                                <state key="highlighted" image="play iconhighlighted.png"/>
                                 <connections>
                                     <segue destination="GCR-dN-IVJ" kind="show" id="vgM-AC-5LI"/>
                                 </connections>
@@ -133,7 +133,7 @@
                                     <constraint firstAttribute="width" constant="500" id="7oF-f7-zs5"/>
                                 </constraints>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KrJ-8L-jgg">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KrJ-8L-jgg">
                                 <rect key="frame" x="250" y="394" width="100" height="100"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="100" id="GVm-zM-4li"/>
@@ -143,8 +143,8 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <state key="disabled" image="playblackhollow.png"/>
-                                <state key="selected" image="playblackhollow.png"/>
-                                <state key="highlighted" image="playblackhollow.png"/>
+                                <state key="selected" image="play iconhighlighted.png"/>
+                                <state key="highlighted" image="play iconhighlighted.png"/>
                                 <connections>
                                     <segue destination="BYZ-38-t0r" kind="show" identifier="startstory" id="HzX-od-jSV"/>
                                 </connections>
@@ -205,6 +205,7 @@
                                     <constraint firstAttribute="height" constant="100" id="gZj-HZ-mBU"/>
                                 </constraints>
                                 <state key="normal" title="Button" image="bookicon.png"/>
+                                <state key="highlighted" image="bookiconhighlighted.png"/>
                                 <connections>
                                     <action selector="start" destination="GCR-dN-IVJ" eventType="touchUpInside" id="208-VZ-j6G"/>
                                 </connections>
@@ -290,7 +291,7 @@
                                 </state>
                                 <state key="disabled" image="prev.png"/>
                                 <state key="selected" image="prev.png"/>
-                                <state key="highlighted" image="prev.png"/>
+                                <state key="highlighted" image="prevhighlighted.png"/>
                                 <connections>
                                     <action selector="prevaction" destination="BYZ-38-t0r" eventType="touchUpInside" id="mOo-ps-Bml"/>
                                 </connections>
@@ -306,7 +307,7 @@
                                 </state>
                                 <state key="disabled" image="next2.png"/>
                                 <state key="selected" image="next2.png"/>
-                                <state key="highlighted" image="next2.png"/>
+                                <state key="highlighted" image="next2highlighted.png"/>
                                 <connections>
                                     <action selector="next2action" destination="BYZ-38-t0r" eventType="touchUpInside" id="YNV-YN-Sfn"/>
                                 </connections>
@@ -320,9 +321,8 @@
                                 <state key="normal" image="play.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
-                                <state key="disabled" image="pause.png"/>
                                 <state key="selected" image="pause.png"/>
-                                <state key="highlighted" image="pause.png"/>
+                                <state key="highlighted" image="playhighlighted.png"/>
                                 <connections>
                                     <action selector="playaction" destination="BYZ-38-t0r" eventType="touchUpInside" id="PYc-hE-JNP"/>
                                 </connections>
@@ -377,6 +377,7 @@
                                 <state key="normal" title="Button" image="xbutton.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <state key="highlighted" image="xbuttonhighlighted.png"/>
                                 <connections>
                                     <segue destination="GCR-dN-IVJ" kind="show" identifier="quit" id="jmO-rI-eUb"/>
                                 </connections>
@@ -392,7 +393,7 @@
                                 </state>
                                 <state key="disabled" image="next.png"/>
                                 <state key="selected" image="next.png"/>
-                                <state key="highlighted" image="next.png"/>
+                                <state key="highlighted" image="nexthighlighted.png"/>
                                 <connections>
                                     <action selector="nextaction" destination="BYZ-38-t0r" eventType="touchUpInside" id="s1m-mw-Hn9"/>
                                 </connections>
@@ -406,7 +407,7 @@
                                 <state key="normal" image="prev2.png"/>
                                 <state key="disabled" image="prev2.png"/>
                                 <state key="selected" image="prev2.png"/>
-                                <state key="highlighted" image="prev2.png"/>
+                                <state key="highlighted" image="prev2highlighted.png"/>
                                 <connections>
                                     <action selector="prev2action" destination="BYZ-38-t0r" eventType="touchUpInside" id="PUe-K2-sW2"/>
                                 </connections>
@@ -619,23 +620,31 @@
     </scenes>
     <resources>
         <image name="bookicon.png" width="480" height="480"/>
+        <image name="bookiconhighlighted.png" width="510" height="510"/>
         <image name="home.png" width="400" height="400"/>
         <image name="menulogo.png" width="1103" height="611"/>
         <image name="next.png" width="400" height="400"/>
         <image name="next2.png" width="400" height="400"/>
+        <image name="next2highlighted.png" width="400" height="400"/>
+        <image name="nexthighlighted.png" width="400" height="400"/>
         <image name="pause.png" width="400" height="400"/>
+        <image name="play iconhighlighted.png" width="480" height="480"/>
         <image name="play.png" width="400" height="400"/>
         <image name="playblackhollow.png" width="480" height="480"/>
         <image name="playgreen.png" width="480" height="480"/>
+        <image name="playhighlighted.png" width="400" height="400"/>
         <image name="prev.png" width="400" height="400"/>
         <image name="prev2.png" width="400" height="400"/>
+        <image name="prev2highlighted.png" width="400" height="400"/>
+        <image name="prevhighlighted.png" width="400" height="400"/>
         <image name="replay.png" width="400" height="400"/>
         <image name="stepperdown.png" width="400" height="400"/>
         <image name="stepperup.png" width="400" height="400"/>
         <image name="xbutton.png" width="400" height="400"/>
+        <image name="xbuttonhighlighted.png" width="400" height="400"/>
     </resources>
     <inferredMetricsTieBreakers>
+        <segue reference="jmO-rI-eUb"/>
         <segue reference="PcM-u8-uVs"/>
-        <segue reference="vgM-AC-5LI"/>
     </inferredMetricsTieBreakers>
 </document>
