@@ -23,6 +23,7 @@
     int timercount;
 }
 @property(nonatomic) double speed;
+@property(nonatomic) int storyindex;
 @property (weak, nonatomic) IBOutlet UILabel *label;
 @property (weak, nonatomic) IBOutlet UILabel *timelabel;
 @property (weak, nonatomic) IBOutlet UIImageView *image;
@@ -45,7 +46,7 @@
 -(IBAction)prev2action;
 
 @property (strong, nonatomic) IBOutlet UIStepper *stepper;
--(IBAction)controlspeed/*:(UIStepper *) sender*/;
+//-(IBAction)controlspeed/*:(UIStepper *) sender*/;
 
 @property (weak, nonatomic) IBOutlet UIButton *stepperup;
 -(IBAction)speedup;

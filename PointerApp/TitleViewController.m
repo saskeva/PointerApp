@@ -27,6 +27,7 @@
     if([segue.identifier isEqualToString:@"startstory"]){
         ViewController *controller = (ViewController *)segue.destinationViewController;
         controller.speed = _speed;
+        controller.storyindex = _storyindex;
     }
 }
 @end

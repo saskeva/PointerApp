@@ -77,7 +77,6 @@
                                 <state key="selected" image="playgreen.png"/>
                                 <state key="highlighted" image="playgreen.png"/>
                                 <connections>
-                                    <action selector="start" destination="ge4-Dx-ehc" eventType="touchUpInside" id="nwN-pE-1nn"/>
                                     <segue destination="GCR-dN-IVJ" kind="show" id="vgM-AC-5LI"/>
                                 </connections>
                             </button>
@@ -103,16 +102,13 @@
                         <variation key="default">
                             <mask key="constraints">
                                 <exclude reference="t2Q-Wy-ljl"/>
+                                <exclude reference="TmF-qO-taj"/>
                                 <exclude reference="8I0-ir-JVk"/>
                                 <exclude reference="BtZ-ec-w9r"/>
                                 <exclude reference="GUi-hm-dwo"/>
-                                <exclude reference="TmF-qO-taj"/>
                             </mask>
                         </variation>
                     </view>
-                    <connections>
-                        <outlet property="button" destination="J23-oK-KZY" id="30r-wc-Ara"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kzI-dn-5eD" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -210,7 +206,31 @@
                                 </constraints>
                                 <state key="normal" title="Button" image="bookicon.png"/>
                                 <connections>
-                                    <segue destination="4Bs-zU-3D2" kind="show" identifier="bookchosen" id="md7-hm-PrH"/>
+                                    <action selector="start" destination="GCR-dN-IVJ" eventType="touchUpInside" id="208-VZ-j6G"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GUW-Yq-xJb" customClass="UIButtonWithValue">
+                                <rect key="frame" x="123" y="87" width="46" height="30"/>
+                                <state key="normal" title="Button"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="keyValue">
+                                        <integer key="value" value="0"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="storyPressed:" destination="GCR-dN-IVJ" eventType="touchUpInside" id="4XR-z9-ICz"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QGJ-O4-vJP" customClass="UIButtonWithValue">
+                                <rect key="frame" x="277" y="87" width="46" height="30"/>
+                                <state key="normal" title="Button"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="keyValue">
+                                        <integer key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="storyPressed:" destination="GCR-dN-IVJ" eventType="touchUpInside" id="2Ro-XU-A7E"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -220,6 +240,10 @@
                             <constraint firstItem="mf7-oU-0PF" firstAttribute="top" secondItem="7Og-4W-TAu" secondAttribute="bottom" constant="50" id="N2c-An-qJF"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="button" destination="7Og-4W-TAu" id="2n7-Ik-LMa"/>
+                        <segue destination="4Bs-zU-3D2" kind="show" identifier="bookchosen" id="PcM-u8-uVs"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2zy-jw-LCs" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -566,7 +590,7 @@
         <image name="xbutton.png" width="400" height="400"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="VDI-hp-gUk"/>
-        <segue reference="jmO-rI-eUb"/>
+        <segue reference="PcM-u8-uVs"/>
+        <segue reference="vgM-AC-5LI"/>
     </inferredMetricsTieBreakers>
 </document>
