@@ -243,20 +243,6 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yNf-5J-9gu">
-                                <rect key="frame" x="490" y="248" width="50" height="50"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="50" id="Kub-BH-CNW"/>
-                                    <constraint firstAttribute="width" constant="50" id="ivd-0g-pzl"/>
-                                </constraints>
-                                <state key="normal" image="prev2.png"/>
-                                <state key="disabled" image="prev2.jpg"/>
-                                <state key="selected" image="prev2.jpg"/>
-                                <state key="highlighted" image="prev2.jpg"/>
-                                <connections>
-                                    <action selector="prev2action" destination="BYZ-38-t0r" eventType="touchUpInside" id="PUe-K2-sW2"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kdP-iP-jNL">
                                 <rect key="frame" x="490" y="306" width="50" height="50"/>
                                 <constraints>
@@ -373,6 +359,20 @@
                                 <state key="highlighted" image="next.png"/>
                                 <connections>
                                     <action selector="nextaction" destination="BYZ-38-t0r" eventType="touchUpInside" id="s1m-mw-Hn9"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yNf-5J-9gu">
+                                <rect key="frame" x="490" y="248" width="50" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="Kub-BH-CNW"/>
+                                    <constraint firstAttribute="width" constant="50" id="ivd-0g-pzl"/>
+                                </constraints>
+                                <state key="normal" image="prev2.png"/>
+                                <state key="disabled" image="prev2.png"/>
+                                <state key="selected" image="prev2.png"/>
+                                <state key="highlighted" image="prev2.png"/>
+                                <connections>
+                                    <action selector="prev2action" destination="BYZ-38-t0r" eventType="touchUpInside" id="PUe-K2-sW2"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -592,7 +592,6 @@
         <image name="playblackhollow.png" width="480" height="480"/>
         <image name="playgreen.png" width="480" height="480"/>
         <image name="prev.png" width="400" height="400"/>
-        <image name="prev2.jpg" width="400" height="400"/>
         <image name="prev2.png" width="400" height="400"/>
         <image name="replay.png" width="400" height="400"/>
         <image name="stepperdown.png" width="400" height="400"/>
@@ -600,7 +599,7 @@
         <image name="xbutton.png" width="400" height="400"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="md7-hm-PrH"/>
+        <segue reference="VDI-hp-gUk"/>
         <segue reference="jmO-rI-eUb"/>
     </inferredMetricsTieBreakers>
 </document>
