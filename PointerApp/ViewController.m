@@ -150,14 +150,17 @@
     if(ispaused){
         ispaused = false;
         UIImage * pauseImg = [UIImage imageNamed:@"pause.png"];
+        UIImage * pauseHighlighted = [UIImage imageNamed:@"pausehighlighted.png"];
         [self.play setImage:pauseImg forState:UIControlStateNormal];
+        [self.play setImage:pauseHighlighted forState:UIControlStateHighlighted];
         
     }
     else{
         ispaused = true;
         UIImage * playImg = [UIImage imageNamed:@"play.png"];
+        UIImage * playHighlighted = [UIImage imageNamed:@"playhighlighted.png"];
         [self.play setImage:playImg forState:UIControlStateNormal];
-        
+        [self.play setImage:playHighlighted forState:UIControlStateHighlighted];
     }
 }
 - (IBAction)nextaction{
