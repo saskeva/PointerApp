@@ -38,6 +38,10 @@
 		3FCCCABF1D32EC6D00D4AF56 /* playblackhollow.png in Resources */ = {isa = PBXBuildFile; fileRef = 3FCCCABB1D32EC6D00D4AF56 /* playblackhollow.png */; };
 		3FCCCAC01D32EC6D00D4AF56 /* replay.png in Resources */ = {isa = PBXBuildFile; fileRef = 3FCCCABC1D32EC6D00D4AF56 /* replay.png */; };
 		3FCCCAC21D32F0E100D4AF56 /* background.png in Resources */ = {isa = PBXBuildFile; fileRef = 3FCCCAC11D32F0E100D4AF56 /* background.png */; };
+		CAE61EF51D4E85E90049F0B8 /* kingarthur1.png in Resources */ = {isa = PBXBuildFile; fileRef = CAE61EF31D4E85E90049F0B8 /* kingarthur1.png */; };
+		CAE61EF61D4E85E90049F0B8 /* kingarthur2.png in Resources */ = {isa = PBXBuildFile; fileRef = CAE61EF41D4E85E90049F0B8 /* kingarthur2.png */; };
+		CAE61EF91D4E85F40049F0B8 /* littleman2.png in Resources */ = {isa = PBXBuildFile; fileRef = CAE61EF71D4E85F40049F0B8 /* littleman2.png */; };
+		CAE61EFA1D4E85F40049F0B8 /* littleman1.png in Resources */ = {isa = PBXBuildFile; fileRef = CAE61EF81D4E85F40049F0B8 /* littleman1.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -92,6 +96,10 @@
 		3FCCCABB1D32EC6D00D4AF56 /* playblackhollow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = playblackhollow.png; sourceTree = "<group>"; };
 		3FCCCABC1D32EC6D00D4AF56 /* replay.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = replay.png; sourceTree = "<group>"; };
 		3FCCCAC11D32F0E100D4AF56 /* background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = background.png; sourceTree = "<group>"; };
+		CAE61EF31D4E85E90049F0B8 /* kingarthur1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = kingarthur1.png; path = ../../../Downloads/kingarthur1.png; sourceTree = "<group>"; };
+		CAE61EF41D4E85E90049F0B8 /* kingarthur2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = kingarthur2.png; path = ../../../Downloads/kingarthur2.png; sourceTree = "<group>"; };
+		CAE61EF71D4E85F40049F0B8 /* littleman2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = littleman2.png; path = ../../../Downloads/littleman2.png; sourceTree = "<group>"; };
+		CAE61EF81D4E85F40049F0B8 /* littleman1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = littleman1.png; path = ../../../Downloads/littleman1.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -156,26 +164,9 @@
 		3F327AA41D04CB5C00AEA340 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				3FCC438E1D43E5C000F123E1 /* bookicon.png */,
-				3FCC438F1D43E5C000F123E1 /* stepperdown.png */,
-				3FCC43901D43E5C000F123E1 /* stepperup.png */,
-				3FCC43911D43E5C000F123E1 /* xbutton.png */,
-				3FCCCAC11D32F0E100D4AF56 /* background.png */,
-				3F3C62141D32F9B600637664 /* launch.png */,
-				3FCCCAB91D32EC6D00D4AF56 /* home.png */,
-				3FCCCABA1D32EC6D00D4AF56 /* menulogo.png */,
-				3FCCCABB1D32EC6D00D4AF56 /* playblackhollow.png */,
-				3FCCCABC1D32EC6D00D4AF56 /* replay.png */,
-				3FCCCAA51D319A2100D4AF56 /* next.png */,
-				3FCCCAA61D319A2100D4AF56 /* next2.png */,
-				3FCCCAA71D319A2100D4AF56 /* pause.png */,
-				3FCCCAA81D319A2100D4AF56 /* play.png */,
-				3FCCCAA91D319A2100D4AF56 /* playgreen.png */,
-				3FCCCAAA1D319A2100D4AF56 /* prev.png */,
-				3FCCCAAB1D319A2100D4AF56 /* prev2.png */,
-				3FCCCA8D1D1615FB00D4AF56 /* bopeep1.jpg */,
-				3FCCCA8E1D1615FB00D4AF56 /* bopeep2.jpg */,
-				3FCCCA8F1D1615FB00D4AF56 /* bopeep3.jpg */,
+				CAE61ED51D4E834C0049F0B8 /* storyimages */,
+				CAE61ED41D4E831F0049F0B8 /* buttons */,
+				CAE61ED31D4E830C0049F0B8 /* app icons */,
 				3F327AA51D04CB5C00AEA340 /* Info.plist */,
 				3F327AA61D04CB5C00AEA340 /* main.m */,
 			);
@@ -197,6 +188,75 @@
 				3F327ABF1D04CB5C00AEA340 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		CAE61ED31D4E830C0049F0B8 /* app icons */ = {
+			isa = PBXGroup;
+			children = (
+				3F3C62141D32F9B600637664 /* launch.png */,
+				3FCCCAC11D32F0E100D4AF56 /* background.png */,
+				3FCCCABA1D32EC6D00D4AF56 /* menulogo.png */,
+			);
+			name = "app icons";
+			sourceTree = "<group>";
+		};
+		CAE61ED41D4E831F0049F0B8 /* buttons */ = {
+			isa = PBXGroup;
+			children = (
+				3FCC438E1D43E5C000F123E1 /* bookicon.png */,
+				3FCC438F1D43E5C000F123E1 /* stepperdown.png */,
+				3FCC43901D43E5C000F123E1 /* stepperup.png */,
+				3FCC43911D43E5C000F123E1 /* xbutton.png */,
+				3FCCCAB91D32EC6D00D4AF56 /* home.png */,
+				3FCCCABB1D32EC6D00D4AF56 /* playblackhollow.png */,
+				3FCCCABC1D32EC6D00D4AF56 /* replay.png */,
+				3FCCCAA51D319A2100D4AF56 /* next.png */,
+				3FCCCAA61D319A2100D4AF56 /* next2.png */,
+				3FCCCAA71D319A2100D4AF56 /* pause.png */,
+				3FCCCAA81D319A2100D4AF56 /* play.png */,
+				3FCCCAA91D319A2100D4AF56 /* playgreen.png */,
+				3FCCCAAA1D319A2100D4AF56 /* prev.png */,
+				3FCCCAAB1D319A2100D4AF56 /* prev2.png */,
+			);
+			name = buttons;
+			sourceTree = "<group>";
+		};
+		CAE61ED51D4E834C0049F0B8 /* storyimages */ = {
+			isa = PBXGroup;
+			children = (
+				CAE61EF21D4E85990049F0B8 /* littleman */,
+				CAE61EF11D4E85750049F0B8 /* kingarthur */,
+				CAE61ED61D4E83540049F0B8 /* bopeep */,
+			);
+			name = storyimages;
+			sourceTree = "<group>";
+		};
+		CAE61ED61D4E83540049F0B8 /* bopeep */ = {
+			isa = PBXGroup;
+			children = (
+				3FCCCA8D1D1615FB00D4AF56 /* bopeep1.jpg */,
+				3FCCCA8E1D1615FB00D4AF56 /* bopeep2.jpg */,
+				3FCCCA8F1D1615FB00D4AF56 /* bopeep3.jpg */,
+			);
+			name = bopeep;
+			sourceTree = "<group>";
+		};
+		CAE61EF11D4E85750049F0B8 /* kingarthur */ = {
+			isa = PBXGroup;
+			children = (
+				CAE61EF31D4E85E90049F0B8 /* kingarthur1.png */,
+				CAE61EF41D4E85E90049F0B8 /* kingarthur2.png */,
+			);
+			name = kingarthur;
+			sourceTree = "<group>";
+		};
+		CAE61EF21D4E85990049F0B8 /* littleman */ = {
+			isa = PBXGroup;
+			children = (
+				CAE61EF71D4E85F40049F0B8 /* littleman2.png */,
+				CAE61EF81D4E85F40049F0B8 /* littleman1.png */,
+			);
+			name = littleman;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -281,10 +341,13 @@
 			files = (
 				3F327AB01D04CB5C00AEA340 /* Main.storyboard in Resources */,
 				3FCC43951D43E5C000F123E1 /* xbutton.png in Resources */,
+				CAE61EF51D4E85E90049F0B8 /* kingarthur1.png in Resources */,
 				3FCCCAC21D32F0E100D4AF56 /* background.png in Resources */,
 				3FCCCA901D1615FB00D4AF56 /* bopeep1.jpg in Resources */,
+				CAE61EF91D4E85F40049F0B8 /* littleman2.png in Resources */,
 				3FCC43921D43E5C000F123E1 /* bookicon.png in Resources */,
 				3FCCCABF1D32EC6D00D4AF56 /* playblackhollow.png in Resources */,
+				CAE61EFA1D4E85F40049F0B8 /* littleman1.png in Resources */,
 				3FCCCAAC1D319A2100D4AF56 /* next.png in Resources */,
 				3FCCCABD1D32EC6D00D4AF56 /* home.png in Resources */,
 				3FCCCAAE1D319A2100D4AF56 /* pause.png in Resources */,
@@ -294,6 +357,7 @@
 				3FCCCAAD1D319A2100D4AF56 /* next2.png in Resources */,
 				3FCCCA921D1615FB00D4AF56 /* bopeep3.jpg in Resources */,
 				3FCCCAB11D319A2100D4AF56 /* prev.png in Resources */,
+				CAE61EF61D4E85E90049F0B8 /* kingarthur2.png in Resources */,
 				3F327AB21D04CB5C00AEA340 /* Images.xcassets in Resources */,
 				3FCCCABE1D32EC6D00D4AF56 /* menulogo.png in Resources */,
 				3FCCCAC01D32EC6D00D4AF56 /* replay.png in Resources */,
