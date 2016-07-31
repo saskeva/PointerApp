@@ -10,6 +10,7 @@
 #import "EndViewController.h"
 #import "MenuViewController.h"
 
+
 @interface ViewController ()
 
 @end
@@ -19,6 +20,7 @@
 - (void) viewDidLoad{
     [super viewDidLoad];
     index = 0;
+    
     ispaused = true;
     timercount = 0;
     //_stepper = [[UIStepper alloc] init];

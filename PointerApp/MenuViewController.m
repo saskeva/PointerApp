@@ -32,8 +32,12 @@
     
     if ( [sender respondsToSelector:@selector(keyValue)] )
         test = [sender valueForKey:@"keyValue"];
-    
-    NSLog(@"the value of keyValue is ... %@", test);
+    int temp = (int)[test integerValue];
+    if(_storyindex == temp)
+        _storyindex = -1;
+    else
+        _storyindex = temp;
+    //NSLog(@"the value of keyValue is ... %@", test);
     // Do any additional setup after loading the view, typically from a nib.
 }
 - (void)didReceiveMemoryWarning {
