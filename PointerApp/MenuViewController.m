@@ -18,7 +18,7 @@
 
 - (void) viewDidLoad{
     [super viewDidLoad];
-    [NSThread sleepForTimeInterval:1.0];
+    //[NSThread sleepForTimeInterval:1.0];
 }
 - (IBAction)start{
     // Do any additional setup after loading the view, typically from a nib.
