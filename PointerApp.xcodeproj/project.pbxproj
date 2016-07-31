@@ -15,6 +15,10 @@
 		3F327AB51D04CB5C00AEA340 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3F327AB31D04CB5C00AEA340 /* LaunchScreen.xib */; };
 		3F327AC11D04CB5C00AEA340 /* PointerAppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F327AC01D04CB5C00AEA340 /* PointerAppTests.m */; };
 		3F3C62151D32F9B600637664 /* launch.png in Resources */ = {isa = PBXBuildFile; fileRef = 3F3C62141D32F9B600637664 /* launch.png */; };
+		3FB590A51D4E901F00E91192 /* kingarthur1.png in Resources */ = {isa = PBXBuildFile; fileRef = 3FB590A11D4E901F00E91192 /* kingarthur1.png */; };
+		3FB590A61D4E901F00E91192 /* kingarthur2.png in Resources */ = {isa = PBXBuildFile; fileRef = 3FB590A21D4E901F00E91192 /* kingarthur2.png */; };
+		3FB590A71D4E901F00E91192 /* littleman1.png in Resources */ = {isa = PBXBuildFile; fileRef = 3FB590A31D4E901F00E91192 /* littleman1.png */; };
+		3FB590A81D4E901F00E91192 /* littleman2.png in Resources */ = {isa = PBXBuildFile; fileRef = 3FB590A41D4E901F00E91192 /* littleman2.png */; };
 		3FCC43921D43E5C000F123E1 /* bookicon.png in Resources */ = {isa = PBXBuildFile; fileRef = 3FCC438E1D43E5C000F123E1 /* bookicon.png */; };
 		3FCC43931D43E5C000F123E1 /* stepperdown.png in Resources */ = {isa = PBXBuildFile; fileRef = 3FCC438F1D43E5C000F123E1 /* stepperdown.png */; };
 		3FCC43941D43E5C000F123E1 /* stepperup.png in Resources */ = {isa = PBXBuildFile; fileRef = 3FCC43901D43E5C000F123E1 /* stepperup.png */; };
@@ -38,10 +42,6 @@
 		3FCCCABF1D32EC6D00D4AF56 /* playblackhollow.png in Resources */ = {isa = PBXBuildFile; fileRef = 3FCCCABB1D32EC6D00D4AF56 /* playblackhollow.png */; };
 		3FCCCAC01D32EC6D00D4AF56 /* replay.png in Resources */ = {isa = PBXBuildFile; fileRef = 3FCCCABC1D32EC6D00D4AF56 /* replay.png */; };
 		3FCCCAC21D32F0E100D4AF56 /* background.png in Resources */ = {isa = PBXBuildFile; fileRef = 3FCCCAC11D32F0E100D4AF56 /* background.png */; };
-		CAE61EF51D4E85E90049F0B8 /* kingarthur1.png in Resources */ = {isa = PBXBuildFile; fileRef = CAE61EF31D4E85E90049F0B8 /* kingarthur1.png */; };
-		CAE61EF61D4E85E90049F0B8 /* kingarthur2.png in Resources */ = {isa = PBXBuildFile; fileRef = CAE61EF41D4E85E90049F0B8 /* kingarthur2.png */; };
-		CAE61EF91D4E85F40049F0B8 /* littleman2.png in Resources */ = {isa = PBXBuildFile; fileRef = CAE61EF71D4E85F40049F0B8 /* littleman2.png */; };
-		CAE61EFA1D4E85F40049F0B8 /* littleman1.png in Resources */ = {isa = PBXBuildFile; fileRef = CAE61EF81D4E85F40049F0B8 /* littleman1.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,6 +69,10 @@
 		3F327ABF1D04CB5C00AEA340 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3F327AC01D04CB5C00AEA340 /* PointerAppTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PointerAppTests.m; sourceTree = "<group>"; };
 		3F3C62141D32F9B600637664 /* launch.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = launch.png; sourceTree = "<group>"; };
+		3FB590A11D4E901F00E91192 /* kingarthur1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = kingarthur1.png; sourceTree = "<group>"; };
+		3FB590A21D4E901F00E91192 /* kingarthur2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = kingarthur2.png; sourceTree = "<group>"; };
+		3FB590A31D4E901F00E91192 /* littleman1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = littleman1.png; sourceTree = "<group>"; };
+		3FB590A41D4E901F00E91192 /* littleman2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = littleman2.png; sourceTree = "<group>"; };
 		3FCC438E1D43E5C000F123E1 /* bookicon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bookicon.png; sourceTree = "<group>"; };
 		3FCC438F1D43E5C000F123E1 /* stepperdown.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = stepperdown.png; sourceTree = "<group>"; };
 		3FCC43901D43E5C000F123E1 /* stepperup.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = stepperup.png; sourceTree = "<group>"; };
@@ -96,10 +100,6 @@
 		3FCCCABB1D32EC6D00D4AF56 /* playblackhollow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = playblackhollow.png; sourceTree = "<group>"; };
 		3FCCCABC1D32EC6D00D4AF56 /* replay.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = replay.png; sourceTree = "<group>"; };
 		3FCCCAC11D32F0E100D4AF56 /* background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = background.png; sourceTree = "<group>"; };
-		CAE61EF31D4E85E90049F0B8 /* kingarthur1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = kingarthur1.png; path = ../../../Downloads/kingarthur1.png; sourceTree = "<group>"; };
-		CAE61EF41D4E85E90049F0B8 /* kingarthur2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = kingarthur2.png; path = ../../../Downloads/kingarthur2.png; sourceTree = "<group>"; };
-		CAE61EF71D4E85F40049F0B8 /* littleman2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = littleman2.png; path = ../../../Downloads/littleman2.png; sourceTree = "<group>"; };
-		CAE61EF81D4E85F40049F0B8 /* littleman1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = littleman1.png; path = ../../../Downloads/littleman1.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -244,8 +244,8 @@
 		CAE61EF11D4E85750049F0B8 /* kingarthur */ = {
 			isa = PBXGroup;
 			children = (
-				CAE61EF31D4E85E90049F0B8 /* kingarthur1.png */,
-				CAE61EF41D4E85E90049F0B8 /* kingarthur2.png */,
+				3FB590A11D4E901F00E91192 /* kingarthur1.png */,
+				3FB590A21D4E901F00E91192 /* kingarthur2.png */,
 			);
 			name = kingarthur;
 			sourceTree = "<group>";
@@ -253,8 +253,8 @@
 		CAE61EF21D4E85990049F0B8 /* littleman */ = {
 			isa = PBXGroup;
 			children = (
-				CAE61EF71D4E85F40049F0B8 /* littleman2.png */,
-				CAE61EF81D4E85F40049F0B8 /* littleman1.png */,
+				3FB590A31D4E901F00E91192 /* littleman1.png */,
+				3FB590A41D4E901F00E91192 /* littleman2.png */,
 			);
 			name = littleman;
 			sourceTree = "<group>";
@@ -341,23 +341,23 @@
 			files = (
 				3F327AB01D04CB5C00AEA340 /* Main.storyboard in Resources */,
 				3FCC43951D43E5C000F123E1 /* xbutton.png in Resources */,
-				CAE61EF51D4E85E90049F0B8 /* kingarthur1.png in Resources */,
+				3FB590A61D4E901F00E91192 /* kingarthur2.png in Resources */,
 				3FCCCAC21D32F0E100D4AF56 /* background.png in Resources */,
 				3FCCCA901D1615FB00D4AF56 /* bopeep1.jpg in Resources */,
-				CAE61EF91D4E85F40049F0B8 /* littleman2.png in Resources */,
+				3FB590A81D4E901F00E91192 /* littleman2.png in Resources */,
 				3FCC43921D43E5C000F123E1 /* bookicon.png in Resources */,
 				3FCCCABF1D32EC6D00D4AF56 /* playblackhollow.png in Resources */,
-				CAE61EFA1D4E85F40049F0B8 /* littleman1.png in Resources */,
 				3FCCCAAC1D319A2100D4AF56 /* next.png in Resources */,
+				3FB590A51D4E901F00E91192 /* kingarthur1.png in Resources */,
 				3FCCCABD1D32EC6D00D4AF56 /* home.png in Resources */,
 				3FCCCAAE1D319A2100D4AF56 /* pause.png in Resources */,
+				3FB590A71D4E901F00E91192 /* littleman1.png in Resources */,
 				3FCCCAAF1D319A2100D4AF56 /* play.png in Resources */,
 				3F327AB51D04CB5C00AEA340 /* LaunchScreen.xib in Resources */,
 				3F3C62151D32F9B600637664 /* launch.png in Resources */,
 				3FCCCAAD1D319A2100D4AF56 /* next2.png in Resources */,
 				3FCCCA921D1615FB00D4AF56 /* bopeep3.jpg in Resources */,
 				3FCCCAB11D319A2100D4AF56 /* prev.png in Resources */,
-				CAE61EF61D4E85E90049F0B8 /* kingarthur2.png in Resources */,
 				3F327AB21D04CB5C00AEA340 /* Images.xcassets in Resources */,
 				3FCCCABE1D32EC6D00D4AF56 /* menulogo.png in Resources */,
 				3FCCCAC01D32EC6D00D4AF56 /* replay.png in Resources */,

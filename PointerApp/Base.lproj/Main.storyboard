@@ -233,6 +233,18 @@
                                     <action selector="storyPressed:" destination="GCR-dN-IVJ" eventType="touchUpInside" id="2Ro-XU-A7E"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jxY-tA-BmJ" customClass="UIButtonWithValue">
+                                <rect key="frame" x="398" y="87" width="46" height="30"/>
+                                <state key="normal" title="Button"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="keyValue">
+                                        <integer key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="storyPressed:" destination="GCR-dN-IVJ" eventType="touchUpInside" id="Sqt-d1-SCD"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
