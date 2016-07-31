@@ -600,7 +600,7 @@
         <image name="xbutton.png" width="400" height="400"/>
     </resources>
     <inferredMetricsTieBreakers>
+        <segue reference="md7-hm-PrH"/>
         <segue reference="jmO-rI-eUb"/>
-        <segue reference="VDI-hp-gUk"/>
     </inferredMetricsTieBreakers>
 </document>
