@@ -49,6 +49,8 @@
 		3FCCCABF1D32EC6D00D4AF56 /* playblackhollow.png in Resources */ = {isa = PBXBuildFile; fileRef = 3FCCCABB1D32EC6D00D4AF56 /* playblackhollow.png */; };
 		3FCCCAC01D32EC6D00D4AF56 /* replay.png in Resources */ = {isa = PBXBuildFile; fileRef = 3FCCCABC1D32EC6D00D4AF56 /* replay.png */; };
 		3FCCCAC21D32F0E100D4AF56 /* background.png in Resources */ = {isa = PBXBuildFile; fileRef = 3FCCCAC11D32F0E100D4AF56 /* background.png */; };
+		CAE61F871D4EB8070049F0B8 /* littleman2.png in Resources */ = {isa = PBXBuildFile; fileRef = CAE61F851D4EB8070049F0B8 /* littleman2.png */; };
+		CAE61F881D4EB8070049F0B8 /* littleman1.png in Resources */ = {isa = PBXBuildFile; fileRef = CAE61F861D4EB8070049F0B8 /* littleman1.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -114,6 +116,8 @@
 		3FCCCABB1D32EC6D00D4AF56 /* playblackhollow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = playblackhollow.png; sourceTree = "<group>"; };
 		3FCCCABC1D32EC6D00D4AF56 /* replay.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = replay.png; sourceTree = "<group>"; };
 		3FCCCAC11D32F0E100D4AF56 /* background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = background.png; sourceTree = "<group>"; };
+		CAE61F851D4EB8070049F0B8 /* littleman2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = littleman2.png; sourceTree = "<group>"; };
+		CAE61F861D4EB8070049F0B8 /* littleman1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = littleman1.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -247,6 +251,7 @@
 		CAE61ED51D4E834C0049F0B8 /* storyimages */ = {
 			isa = PBXGroup;
 			children = (
+				CAE61F841D4EB7CD0049F0B8 /* littleman */,
 				CAE61EF11D4E85750049F0B8 /* kingarthur */,
 				CAE61ED61D4E83540049F0B8 /* bopeep */,
 			);
@@ -270,6 +275,15 @@
 				3FB590A21D4E901F00E91192 /* kingarthur2.png */,
 			);
 			name = kingarthur;
+			sourceTree = "<group>";
+		};
+		CAE61F841D4EB7CD0049F0B8 /* littleman */ = {
+			isa = PBXGroup;
+			children = (
+				CAE61F851D4EB8070049F0B8 /* littleman2.png */,
+				CAE61F861D4EB8070049F0B8 /* littleman1.png */,
+			);
+			name = littleman;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -361,7 +375,9 @@
 				3FCCCA901D1615FB00D4AF56 /* bopeep1.jpg in Resources */,
 				3FB590BD1D4E9D4A00E91192 /* xbuttonhighlighted.png in Resources */,
 				3FCC43921D43E5C000F123E1 /* bookicon.png in Resources */,
+				CAE61F881D4EB8070049F0B8 /* littleman1.png in Resources */,
 				3FCCCABF1D32EC6D00D4AF56 /* playblackhollow.png in Resources */,
+				CAE61F871D4EB8070049F0B8 /* littleman2.png in Resources */,
 				3FCCCAAC1D319A2100D4AF56 /* next.png in Resources */,
 				3FB590B71D4E9D4A00E91192 /* nexthighlighted.png in Resources */,
 				3FB590B91D4E9D4A00E91192 /* play iconhighlighted.png in Resources */,

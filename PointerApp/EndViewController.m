@@ -29,6 +29,7 @@
     if([segue.identifier isEqualToString:@"replay"]){
         TitleViewController *controller = (TitleViewController *)segue.destinationViewController;
         controller.speed = _speed;
+        controller.storyindex = _storyindex;
     }
     else if([segue.identifier isEqualToString:@"return"]){
         MenuViewController *controller = (MenuViewController *)segue.destinationViewController;

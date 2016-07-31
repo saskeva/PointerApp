@@ -12,5 +12,6 @@
 @interface EndViewController : UIViewController{
 }
 @property(nonatomic) double speed;
+@property(nonatomic) int storyindex;
 
 @end

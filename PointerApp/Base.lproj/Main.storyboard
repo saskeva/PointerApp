@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="ge4-Dx-ehc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="ge4-Dx-ehc">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
@@ -274,112 +274,18 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1.00 secs" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="C75-Va-rfX">
-                                <rect key="frame" x="60" y="465" width="54" height="15"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kdP-iP-jNL">
-                                <rect key="frame" x="490" y="306" width="50" height="50"/>
+                            <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yNf-5J-9gu">
+                                <rect key="frame" x="490" y="248" width="50" height="50"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="50" id="LVr-P1-IBR"/>
-                                    <constraint firstAttribute="height" constant="50" id="fj4-3L-umr"/>
+                                    <constraint firstAttribute="height" constant="50" id="Kub-BH-CNW"/>
+                                    <constraint firstAttribute="width" constant="50" id="ivd-0g-pzl"/>
                                 </constraints>
-                                <state key="normal" image="prev.png">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <state key="disabled" image="prev.png"/>
-                                <state key="selected" image="prev.png"/>
-                                <state key="highlighted" image="prevhighlighted.png"/>
+                                <state key="normal" image="prev2.png"/>
+                                <state key="disabled" image="prev2.png"/>
+                                <state key="selected" image="prev2.png"/>
+                                <state key="highlighted" image="prev2highlighted.png"/>
                                 <connections>
-                                    <action selector="prevaction" destination="BYZ-38-t0r" eventType="touchUpInside" id="mOo-ps-Bml"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dff-65-Oyz">
-                                <rect key="frame" x="490" y="485" width="50" height="50"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="50" id="X7t-sI-ZJk"/>
-                                    <constraint firstAttribute="width" constant="50" id="sm2-uh-6R0"/>
-                                </constraints>
-                                <state key="normal" image="next2.png">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <state key="disabled" image="next2.png"/>
-                                <state key="selected" image="next2.png"/>
-                                <state key="highlighted" image="next2highlighted.png"/>
-                                <connections>
-                                    <action selector="next2action" destination="BYZ-38-t0r" eventType="touchUpInside" id="YNV-YN-Sfn"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KNH-bd-Aw2">
-                                <rect key="frame" x="490" y="364" width="50" height="50"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="50" id="8hr-2r-PID"/>
-                                    <constraint firstAttribute="height" constant="50" id="cFL-LZ-VF8"/>
-                                </constraints>
-                                <state key="normal" image="play.png">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <state key="selected" image="pause.png"/>
-                                <state key="highlighted" image="playhighlighted.png"/>
-                                <connections>
-                                    <action selector="playaction" destination="BYZ-38-t0r" eventType="touchUpInside" id="PYc-hE-JNP"/>
-                                </connections>
-                            </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="13" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="st5-ca-Chb">
-                                <rect key="frame" x="221" y="150" width="159" height="35"/>
-                                <attributedString key="attributedText">
-                                    <fragment content="Placeholder">
-                                        <attributes>
-                                            <font key="NSFont" size="30" name="Helvetica"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
-                                        </attributes>
-                                    </fragment>
-                                </attributedString>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="i4X-Me-Mb3">
-                                <rect key="frame" x="110" y="193" width="360" height="213"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="500" id="BG7-Xt-jls"/>
-                                    <constraint firstAttribute="height" constant="500" id="kBO-1E-O0G"/>
-                                </constraints>
-                            </imageView>
-                            <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mrL-KI-2rV">
-                                <rect key="frame" x="60" y="485" width="50" height="50"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="50" id="J3P-KH-Mn5"/>
-                                    <constraint firstAttribute="height" constant="50" id="rhL-Lx-hcu"/>
-                                </constraints>
-                                <state key="normal" title="Button" image="stepperdown.png"/>
-                                <connections>
-                                    <action selector="speeddown" destination="BYZ-38-t0r" eventType="touchUpInside" id="8T5-mX-OCa"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zIw-rh-gjG">
-                                <rect key="frame" x="60" y="410" width="50" height="50"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="50" id="1Q6-ld-RZj"/>
-                                    <constraint firstAttribute="height" constant="50" id="Wlk-kG-9wm"/>
-                                </constraints>
-                                <state key="normal" title="Button" image="stepperup.png"/>
-                                <connections>
-                                    <action selector="speedup" destination="BYZ-38-t0r" eventType="touchUpInside" id="NHr-yj-fNr"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="w3L-GU-VMJ">
-                                <rect key="frame" x="540" y="30" width="40" height="40"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="40" id="AOt-7Q-miA"/>
-                                    <constraint firstAttribute="height" constant="40" id="fpz-N0-Jj5"/>
-                                </constraints>
-                                <state key="normal" title="Button" image="xbutton.png">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <state key="highlighted" image="xbuttonhighlighted.png"/>
-                                <connections>
-                                    <segue destination="GCR-dN-IVJ" kind="show" identifier="quit" id="jmO-rI-eUb"/>
+                                    <action selector="prev2action" destination="BYZ-38-t0r" eventType="touchUpInside" id="PUe-K2-sW2"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Ws-0S-trE">
@@ -398,20 +304,114 @@
                                     <action selector="nextaction" destination="BYZ-38-t0r" eventType="touchUpInside" id="s1m-mw-Hn9"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yNf-5J-9gu">
-                                <rect key="frame" x="490" y="248" width="50" height="50"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="w3L-GU-VMJ">
+                                <rect key="frame" x="540" y="30" width="40" height="40"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="50" id="Kub-BH-CNW"/>
-                                    <constraint firstAttribute="width" constant="50" id="ivd-0g-pzl"/>
+                                    <constraint firstAttribute="width" constant="40" id="AOt-7Q-miA"/>
+                                    <constraint firstAttribute="height" constant="40" id="fpz-N0-Jj5"/>
                                 </constraints>
-                                <state key="normal" image="prev2.png"/>
-                                <state key="disabled" image="prev2.png"/>
-                                <state key="selected" image="prev2.png"/>
-                                <state key="highlighted" image="prev2highlighted.png"/>
+                                <state key="normal" title="Button" image="xbutton.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted" image="xbuttonhighlighted.png"/>
                                 <connections>
-                                    <action selector="prev2action" destination="BYZ-38-t0r" eventType="touchUpInside" id="PUe-K2-sW2"/>
+                                    <segue destination="GCR-dN-IVJ" kind="show" identifier="quit" id="jmO-rI-eUb"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zIw-rh-gjG">
+                                <rect key="frame" x="60" y="410" width="50" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="1Q6-ld-RZj"/>
+                                    <constraint firstAttribute="height" constant="50" id="Wlk-kG-9wm"/>
+                                </constraints>
+                                <state key="normal" title="Button" image="stepperup.png"/>
+                                <connections>
+                                    <action selector="speedup" destination="BYZ-38-t0r" eventType="touchUpInside" id="NHr-yj-fNr"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mrL-KI-2rV">
+                                <rect key="frame" x="60" y="485" width="50" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="J3P-KH-Mn5"/>
+                                    <constraint firstAttribute="height" constant="50" id="rhL-Lx-hcu"/>
+                                </constraints>
+                                <state key="normal" title="Button" image="stepperdown.png"/>
+                                <connections>
+                                    <action selector="speeddown" destination="BYZ-38-t0r" eventType="touchUpInside" id="8T5-mX-OCa"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="i4X-Me-Mb3">
+                                <rect key="frame" x="110" y="193" width="360" height="213"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="500" id="BG7-Xt-jls"/>
+                                    <constraint firstAttribute="height" constant="500" id="kBO-1E-O0G"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KNH-bd-Aw2">
+                                <rect key="frame" x="490" y="364" width="50" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="8hr-2r-PID"/>
+                                    <constraint firstAttribute="height" constant="50" id="cFL-LZ-VF8"/>
+                                </constraints>
+                                <state key="normal" image="play.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="selected" image="pause.png"/>
+                                <state key="highlighted" image="playhighlighted.png"/>
+                                <connections>
+                                    <action selector="playaction" destination="BYZ-38-t0r" eventType="touchUpInside" id="PYc-hE-JNP"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dff-65-Oyz">
+                                <rect key="frame" x="490" y="485" width="50" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="X7t-sI-ZJk"/>
+                                    <constraint firstAttribute="width" constant="50" id="sm2-uh-6R0"/>
+                                </constraints>
+                                <state key="normal" image="next2.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="disabled" image="next2.png"/>
+                                <state key="selected" image="next2.png"/>
+                                <state key="highlighted" image="next2highlighted.png"/>
+                                <connections>
+                                    <action selector="next2action" destination="BYZ-38-t0r" eventType="touchUpInside" id="YNV-YN-Sfn"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kdP-iP-jNL">
+                                <rect key="frame" x="490" y="306" width="50" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="LVr-P1-IBR"/>
+                                    <constraint firstAttribute="height" constant="50" id="fj4-3L-umr"/>
+                                </constraints>
+                                <state key="normal" image="prev.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="disabled" image="prev.png"/>
+                                <state key="selected" image="prev.png"/>
+                                <state key="highlighted" image="prevhighlighted.png"/>
+                                <connections>
+                                    <action selector="prevaction" destination="BYZ-38-t0r" eventType="touchUpInside" id="mOo-ps-Bml"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1.00 secs" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="C75-Va-rfX">
+                                <rect key="frame" x="60" y="465" width="54" height="15"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="13" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="st5-ca-Chb">
+                                <rect key="frame" x="221" y="150" width="159" height="35"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="Placeholder">
+                                        <attributes>
+                                            <font key="NSFont" size="30" name="Helvetica"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
