@@ -20,7 +20,7 @@
 - (void) viewDidLoad{
     [super viewDidLoad];
     index = 0;
-    
+     NSLog(@"the value of storyindex is ... %d", _storyindex);
     ispaused = true;
     timercount = 0;
     //_stepper = [[UIStepper alloc] init];
@@ -44,7 +44,37 @@
               @"She", @"found", @"them", @"indeed,", @"but", @"it", @"made", @"her", @"heart", @"bleed,\n",
               @"For", @"they'd", @"left", @"all", @"their", @"tails", @"behind", @"them.\n", nil],
              nil];
+    NSMutableArray *story1 = [NSMutableArray arrayWithObjects:
+             [NSArray arrayWithObjects:@"1Little", @"Bo", @"Peep", @"has", @"lost", @"her", @"sheep,\n",
+              @"And", @"can't", @"tell", @"where", @"to", @"find", @"them;\n",
+              @"Leave", @"them", @"alone,", @"and", @"they'll", @"come", @"home,\n",
+              @"And", @"bring", @"their", @"tails", @"behind", @"them.\n", nil],
+             [NSArray arrayWithObjects:@"1Little", @"Bo", @"Peep", @"fell", @"fast", @"asleep,\n",
+              @"And", @"dreamt", @"she", @"heard", @"them", @"bleating;\n",
+              @"But", @"when", @"she", @"awoke,", @"she", @"found", @"it", @"a", @"joke,\n",
+              @"For", @"they", @"were", @"still", @"a-fleeting.\n", nil],
+             [NSArray arrayWithObjects:@"1Then,", @"up", @"she", @"took", @"her", @"little", @"crook,\n",
+              @"Determined", @"for", @"to", @"find", @"them;\n",
+              @"She", @"found", @"them", @"indeed,", @"but", @"it", @"made", @"her", @"heart", @"bleed,\n",
+              @"For", @"they'd", @"left", @"all", @"their", @"tails", @"behind", @"them.\n", nil],
+             nil];
+    NSMutableArray *story2 = [NSMutableArray arrayWithObjects:
+             [NSArray arrayWithObjects:@"2Little", @"Bo", @"Peep", @"has", @"lost", @"her", @"sheep,\n",
+              @"And", @"can't", @"tell", @"where", @"to", @"find", @"them;\n",
+              @"Leave", @"them", @"alone,", @"and", @"they'll", @"come", @"home,\n",
+              @"And", @"bring", @"their", @"tails", @"behind", @"them.\n", nil],
+             [NSArray arrayWithObjects:@"2Little", @"Bo", @"Peep", @"fell", @"fast", @"asleep,\n",
+              @"And", @"dreamt", @"she", @"heard", @"them", @"bleating;\n",
+              @"But", @"when", @"she", @"awoke,", @"she", @"found", @"it", @"a", @"joke,\n",
+              @"For", @"they", @"were", @"still", @"a-fleeting.\n", nil],
+             [NSArray arrayWithObjects:@"2Then,", @"up", @"she", @"took", @"her", @"little", @"crook,\n",
+              @"Determined", @"for", @"to", @"find", @"them;\n",
+              @"She", @"found", @"them", @"indeed,", @"but", @"it", @"made", @"her", @"heart", @"bleed,\n",
+              @"For", @"they'd", @"left", @"all", @"their", @"tails", @"behind", @"them.\n", nil],
+             nil];
+    storylist = [NSMutableArray arrayWithObjects: story,story1,story2, nil];
     self.label.text = @"";
+    
     images = [NSArray arrayWithObjects:@"bopeep1.jpg", @"bopeep2.jpg", @"bopeep3.jpg",nil];
 }
 - (void)viewWillAppear:(BOOL)animated {
@@ -78,10 +108,10 @@
     }
 }
 -(void) nextWord{
-    if(wordindex >= [story[page] count]){
+    if(wordindex >= [storylist[_storyindex][page] count]){
         wordindex = 0;
         page += 1;
-        if(page >= [story count]){
+        if(page >= [storylist[_storyindex] count]){
             ispaused = true;
             //page = (int)[story count]-1;
             //[self.done setHidden:false];
@@ -92,9 +122,9 @@
         [self.image setImage: myImage];
         highLightAt = NSMakeRange(0,0);
         line = [[NSMutableAttributedString alloc] initWithString:@""];
-        for(int j = 0; j < [story[page] count]; j++){
-            [line.mutableString appendString:story[page][j]];
-            if ([story[page][j] rangeOfString:@"\n"].location == NSNotFound) {
+        for(int j = 0; j < [storylist[_storyindex][page] count]; j++){
+            [line.mutableString appendString:storylist[_storyindex][page][j]];
+            if ([storylist[_storyindex][page][j] rangeOfString:@"\n"].location == NSNotFound) {
                 [line.mutableString appendString:@" "];
             }
         }
@@ -108,9 +138,9 @@
     UIImage *myImage = [UIImage imageNamed: images[page]];
     [self.image setImage: myImage];
     line = [[NSMutableAttributedString alloc] initWithString:@""];
-    for(int j = 0; j < [story[page] count]; j++){
-        [line.mutableString appendString:story[page][j]];
-        if ([story[page][j] rangeOfString:@"\n"].location == NSNotFound) {
+    for(int j = 0; j < [storylist[_storyindex][page] count]; j++){
+        [line.mutableString appendString:storylist[_storyindex][page][j]];
+        if ([storylist[_storyindex][page][j] rangeOfString:@"\n"].location == NSNotFound) {
             [line.mutableString appendString:@" "];
         }
     }
@@ -121,7 +151,7 @@
 -(void) highlight{
     //UIFont *boldText = [UIFont boldSystemFontOfSize:30];
     NSNumber* underlineNumber = [NSNumber numberWithInteger:NSUnderlineStyleThick];
-    current = story[page][wordindex];
+    current = storylist[_storyindex][page][wordindex];
     [line removeAttribute:NSForegroundColorAttributeName range:highLightAt];
     //[line removeAttribute:NSFontAttributeName range:highLightAt];
     [line removeAttribute:NSUnderlineStyleAttributeName range:highLightAt];
@@ -169,7 +199,7 @@
 }
 - (IBAction)next2action{
     // Do any additional setup after loading the view, typically from a nib.
-    if(page >= [story count]-1){
+    if(page >= [storylist[_storyindex] count]-1){
         //page = (int)[story count]-1;
         return;
     }
@@ -194,23 +224,23 @@
         [self.image setImage: myImage];
         highLightAt = NSMakeRange(0,0);
         line = [[NSMutableAttributedString alloc] initWithString:@""];
-        for(int j = 0; j < [story[page] count]; j++){
-            [line.mutableString appendString:story[page][j]];
-            if ([story[page][j] rangeOfString:@"\n"].location == NSNotFound) {
+        for(int j = 0; j < [storylist[_storyindex][page] count]; j++){
+            [line.mutableString appendString:storylist[_storyindex][page][j]];
+            if ([storylist[_storyindex][page][j] rangeOfString:@"\n"].location == NSNotFound) {
                 [line.mutableString appendString:@" "];
             }
         }
         index = 0;
     }
     else{
-        current = story[page][wordindex+1];
+        current = storylist[_storyindex][page][wordindex+1];
         if([current rangeOfString:@"\n"].location == NSNotFound) {
             index -= current.length +1;
         }
         else {
             index -= current.length;
         }
-        current = story[page][wordindex];
+        current = storylist[_storyindex][page][wordindex];
         if([current rangeOfString:@"\n"].location == NSNotFound) {
             index -= current.length+1;
         }

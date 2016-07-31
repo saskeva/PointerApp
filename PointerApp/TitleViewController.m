@@ -16,7 +16,7 @@
 @implementation TitleViewController
 
 - (void) viewDidLoad{
-    NSLog(@"the value of storyindex is ... %d", _storyindex);
+   
     [super viewDidLoad];
 }
 

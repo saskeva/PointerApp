@@ -14,6 +14,7 @@
     NSRange highLightAt;
     NSString *current;
     NSMutableArray *story;
+    NSMutableArray *storylist;
     NSArray *images;
     NSMutableAttributedString *line;
     int page;
