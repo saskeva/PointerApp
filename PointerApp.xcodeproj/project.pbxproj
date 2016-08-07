@@ -15,6 +15,7 @@
 		3F327AB51D04CB5C00AEA340 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3F327AB31D04CB5C00AEA340 /* LaunchScreen.xib */; };
 		3F327AC11D04CB5C00AEA340 /* PointerAppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F327AC01D04CB5C00AEA340 /* PointerAppTests.m */; };
 		3F3C62151D32F9B600637664 /* launch.png in Resources */ = {isa = PBXBuildFile; fileRef = 3F3C62141D32F9B600637664 /* launch.png */; };
+		3F4F6A311D57E4C300B1D35F /* StoryLib.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F4F6A301D57E4C300B1D35F /* StoryLib.m */; };
 		3FB590A51D4E901F00E91192 /* kingarthur1.png in Resources */ = {isa = PBXBuildFile; fileRef = 3FB590A11D4E901F00E91192 /* kingarthur1.png */; };
 		3FB590A61D4E901F00E91192 /* kingarthur2.png in Resources */ = {isa = PBXBuildFile; fileRef = 3FB590A21D4E901F00E91192 /* kingarthur2.png */; };
 		3FB590B51D4E9D4A00E91192 /* bookiconhighlighted.png in Resources */ = {isa = PBXBuildFile; fileRef = 3FB590AC1D4E9D4A00E91192 /* bookiconhighlighted.png */; };
@@ -78,6 +79,8 @@
 		3F327ABF1D04CB5C00AEA340 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3F327AC01D04CB5C00AEA340 /* PointerAppTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PointerAppTests.m; sourceTree = "<group>"; };
 		3F3C62141D32F9B600637664 /* launch.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = launch.png; sourceTree = "<group>"; };
+		3F4F6A301D57E4C300B1D35F /* StoryLib.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StoryLib.m; sourceTree = "<group>"; };
+		3F4F6A321D57E4D600B1D35F /* StoryLib.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StoryLib.h; sourceTree = "<group>"; };
 		3FB590A11D4E901F00E91192 /* kingarthur1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = kingarthur1.png; sourceTree = "<group>"; };
 		3FB590A21D4E901F00E91192 /* kingarthur2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = kingarthur2.png; sourceTree = "<group>"; };
 		3FB590AC1D4E9D4A00E91192 /* bookiconhighlighted.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bookiconhighlighted.png; sourceTree = "<group>"; };
@@ -159,6 +162,8 @@
 		3F327AA31D04CB5C00AEA340 /* PointerApp */ = {
 			isa = PBXGroup;
 			children = (
+				3F4F6A321D57E4D600B1D35F /* StoryLib.h */,
+				3F4F6A301D57E4C300B1D35F /* StoryLib.m */,
 				3FCC43981D4E85D200F123E1 /* UIButtonWithValue.h */,
 				3FCC43991D4E896100F123E1 /* UIButtonWithValue.m */,
 				3FCCCAB61D32341900D4AF56 /* TitleViewController.h */,
@@ -425,6 +430,7 @@
 				3F327AAA1D04CB5C00AEA340 /* AppDelegate.m in Sources */,
 				3FCC439A1D4E896100F123E1 /* UIButtonWithValue.m in Sources */,
 				3FCCCAB41D31A2D600D4AF56 /* EndViewController.m in Sources */,
+				3F4F6A311D57E4C300B1D35F /* StoryLib.m in Sources */,
 				3F327AA71D04CB5C00AEA340 /* main.m in Sources */,
 				3FCCCA8A1D135DF800D4AF56 /* MenuViewController.m in Sources */,
 			);

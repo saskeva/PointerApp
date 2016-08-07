@@ -9,6 +9,7 @@
 #import "ViewController.h"
 #import "EndViewController.h"
 #import "MenuViewController.h"
+#import "StoryLib.h"
 
 
 @interface ViewController ()
@@ -20,6 +21,7 @@
 - (void) viewDidLoad{
     [super viewDidLoad];
     index = 0;
+    StoryLib *sharedList = [StoryLib sharedList];
      NSLog(@"the value of storyindex is ... %d", _storyindex);
     ispaused = true;
     timercount = 0;
@@ -30,55 +32,11 @@
     myTimer = [NSTimer scheduledTimerWithTimeInterval:(0.10) target:self selector:@selector(onTimer) userInfo:nil repeats:YES];
     highLightAt = NSMakeRange(0,0);
     current = @"";
-    story = [NSMutableArray arrayWithObjects:
-             [NSArray arrayWithObjects:@"Little", @"Bo", @"Peep", @"has", @"lost", @"her", @"sheep,\n",
-              @"And", @"can't", @"tell", @"where", @"to", @"find", @"them;\n",
-              @"Leave", @"them", @"alone,", @"and", @"they'll", @"come", @"home,\n",
-              @"And", @"bring", @"their", @"tails", @"behind", @"them.\n", nil],
-             [NSArray arrayWithObjects:@"Little", @"Bo", @"Peep", @"fell", @"fast", @"asleep,\n",
-              @"And", @"dreamt", @"she", @"heard", @"them", @"bleating;\n",
-              @"But", @"when", @"she", @"awoke,", @"she", @"found", @"it", @"a", @"joke,\n",
-              @"For", @"they", @"were", @"still", @"a-fleeting.\n", nil],
-             [NSArray arrayWithObjects:@"Then,", @"up", @"she", @"took", @"her", @"little", @"crook,\n",
-              @"Determined", @"for", @"to", @"find", @"them;\n",
-              @"She", @"found", @"them", @"indeed,", @"but", @"it", @"made", @"her", @"heart", @"bleed,\n",
-              @"For", @"they'd", @"left", @"all", @"their", @"tails", @"behind", @"them.\n", nil],
-             nil];
-    NSMutableArray *story1 = [NSMutableArray arrayWithObjects:
-             [NSArray arrayWithObjects:@"When", @"good", @"king", @"Arthur", @"ruled", @"this", @"land,\n",
-              @"He", @"was", @"a", @"goodly", @"king;\n",
-              @"He", @"stole", @"three,", @"pecks", @"of", @"barley-meal,\n",
-              @"To", @"make", @"a", @"bag-pudding.\n", nil],
-             [NSArray arrayWithObjects:@"A", @"bag", @"pudding", @"the", @"king", @"did, "@"make,\n",
-              @"And", @"stuffed", @"it", @"well", @"with", @"plums:\n",
-              @"And", @"in", @"it", @"put,", @"great", @"lumps", @"of", @"fat,\n"
-              @"As", @"big", @"as", @"my", @"two", @"thumbs.\n", nil],
-             [NSArray arrayWithObjects:@"The,", @"king", @"and", @"queen", @"did", @"eat", @"thereof,\n",
-              @"And", @"noblemen", @"beside;\n",
-              @"And", @"what", @"they", @"could", @"not", @"eat", @"that", @"night,\n",
-              @"The", @"queen", @"next", @"morning", @"fried.\n", nil],
-             nil];
-    NSMutableArray *story2 = [NSMutableArray arrayWithObjects:
-             [NSArray arrayWithObjects:@"There", @"was", @"a", @"little", @"man,\n",
-              @"And", @"he", @"had", @"a", @"little", @"gun,\n",
-              @"And", @"his", @"bullets", @"were", @"made", @"of", @"lead,", @"lead,", @"lead;\n",
-              @"He", @"went", @"to", @"the", @"brook\n",
-              @"And", @"saw", @"a", @"little", @"duck\n",
-              @"And", @"he", @"shot", @"it", @"right", @"through", @"the", @"head,", @"head,", @"head.\n", nil],
-             [NSArray arrayWithObjects:@"He", @"carried", @"it", @"home,\n",
-              @"To", @"his", @"old", @"wife", @"Joan,\n",
-              @"And", @"bid", @"her", @"a", @"fire", @"to", @"make,", @"make,", @"make;\n",
-              @"To", @"roast", @"the", @"little", @"duck\n",
-              @"He", @"had", @"shot", @"in", @"the", @"brook\n",
-              @"And", @"he'd", @"go", @"and", @"fetch", @"her", @"the", @"drake,", @"drake,", @"drake.\n", nil],
-             nil];
-    storylist = [NSMutableArray arrayWithObjects: story,story1,story2, nil];
+    
+    storylist = [sharedList getStoryList];
     self.label.text = @"";
     
-    images = [NSArray arrayWithObjects:@"bopeep1.jpg", @"bopeep2.jpg", @"bopeep3.jpg", nil];
-    NSArray *images1 = [NSArray arrayWithObjects:@"kingarthur1.png", @"kingarthur1.png", @"kingarthur2.png", @"kingarthur2.png", nil];
-    NSArray *images2 = [NSArray arrayWithObjects:@"littleman1.png", @"littleman2.png", nil];
-    imagelist = [NSMutableArray arrayWithObjects: images, images1, images2, nil];
+    imagelist = [sharedList getImageList];
     
 }
 - (void)viewWillAppear:(BOOL)animated {
