@@ -23,7 +23,12 @@
      NSLog(@"the value of storyindex is ... %d", _storyindex);
     ispaused = true;
     timercount = 0;
-    //_stepper = [[UIStepper alloc] init];
+    _slider.minimumValue = 1.0;
+    _slider.maximumValue = 20.0;
+    _slider.value = 10.0;
+    CGAffineTransform trans = CGAffineTransformMakeRotation(-M_PI_2);
+    _slider.transform = trans;
+    
     if(_speed < 1.0 || _speed > 20.0)
         _speed = 10;
     [_timelabel setText:[NSString stringWithFormat:@"%0.2f secs", _speed/10]];
@@ -270,18 +275,9 @@
     //[self performSegueWithIdentifier:@"EndStory" sender:self];
 }
 
--(IBAction)speedup{
-    if(_speed < 20){
-        _speed = _speed + 1;
-        [_timelabel setText:[NSString stringWithFormat:@"%0.2f secs", _speed/10]];
-    }
-}
-
--(IBAction)speeddown{
-    if(_speed > 1){
-        _speed = _speed - 1;
-        [_timelabel setText:[NSString stringWithFormat:@"%0.2f secs", _speed/10]];
-    }
+-(IBAction)controlspeed:(UISlider *) sender{
+    _speed = _slider.value;
+    [_timelabel setText:[NSString stringWithFormat:@"%0.2f secs", _slider.value/10]];
 }
 
 -(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{

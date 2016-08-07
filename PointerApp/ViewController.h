@@ -47,14 +47,8 @@
 @property (weak, nonatomic) IBOutlet UIButton *prev2;
 -(IBAction)prev2action;
 
-@property (strong, nonatomic) IBOutlet UIStepper *stepper;
-//-(IBAction)controlspeed/*:(UIStepper *) sender*/;
-
-@property (weak, nonatomic) IBOutlet UIButton *stepperup;
--(IBAction)speedup;
-
-@property (weak, nonatomic) IBOutlet UIButton *stepperdown;
--(IBAction)speeddown;
+@property (strong, nonatomic) IBOutlet UISlider *slider;
+-(IBAction)controlspeed:(UISlider *) sender;
 
 @end
 

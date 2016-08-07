@@ -16,8 +16,9 @@
 @property(nonatomic) int storyindex;
 @property (weak, nonatomic) IBOutlet UILabel *label;
 @property (weak, nonatomic) IBOutlet UIButton *button;
-@property (weak, nonatomic) IBOutlet UIButtonWithValue *story0;
-@property (weak, nonatomic) IBOutlet UIButtonWithValue *story1;
+@end
+
+@interface SimpleTableViewController : UIViewController <UITableViewDelegate, UITableViewDataSource>
 
 -(IBAction)start;
 -(IBAction)storyPressed:(UIControl *)sender;
