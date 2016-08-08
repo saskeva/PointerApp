@@ -13,9 +13,7 @@
     NSInteger index;
     NSRange highLightAt;
     NSString *current;
-    NSMutableArray *story;
     NSMutableArray *storylist;
-    NSArray *images;
     NSArray *imagelist;
     NSMutableAttributedString *line;
     int page;

@@ -57,7 +57,6 @@ NSArray *stories;
         _storyindex = -1;
     else
         _storyindex = temp;
-    //NSLog(@"the value of keyValue is ... %@", test);
     // Do any additional setup after loading the view, typically from a nib.
 }
 - (void)didReceiveMemoryWarning {

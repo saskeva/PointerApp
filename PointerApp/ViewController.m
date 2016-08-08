@@ -22,17 +22,17 @@
     [super viewDidLoad];
     index = 0;
     StoryLib *sharedList = [StoryLib sharedList];
-     NSLog(@"the value of storyindex is ... %d", _storyindex);
     ispaused = true;
     timercount = 0;
     _slider.minimumValue = 1.0;
-    _slider.maximumValue = 20.0;
-    _slider.value = 10.0;
+    _slider.maximumValue = 10.0;
     CGAffineTransform trans = CGAffineTransformMakeRotation(-M_PI_2);
     _slider.transform = trans;
     
-    if(_speed < 1.0 || _speed > 20.0)
+    if(_speed < 1.0 || _speed > 10.0) {
         _speed = 10;
+    }
+    _slider.value = _speed;
     [_timelabel setText:[NSString stringWithFormat:@"%0.2f secs", _speed/10]];
     myTimer = [NSTimer scheduledTimerWithTimeInterval:(0.10) target:self selector:@selector(onTimer) userInfo:nil repeats:YES];
     highLightAt = NSMakeRange(0,0);
@@ -187,7 +187,7 @@
             //fix this behavior
         }
         wordindex = 0;
-        UIImage *myImage = [UIImage imageNamed: images[page]];
+        UIImage *myImage = [UIImage imageNamed: imagelist[_storyindex][page]];
         [self.image setImage: myImage];
         highLightAt = NSMakeRange(0,0);
         line = [[NSMutableAttributedString alloc] initWithString:@""];
