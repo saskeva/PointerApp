@@ -14,4 +14,7 @@
 @property(nonatomic) double speed;
 @property(nonatomic) int storyindex;
 
+@property (weak, nonatomic) IBOutlet UILabel *storyTitle;
+@property (weak, nonatomic) IBOutlet UIImageView *storyTitleImage;
+
 @end

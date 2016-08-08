@@ -27,10 +27,10 @@
     return sharedStoryList;
 }
 -(void)initTitleImages{
-    titleimagelist = [NSMutableArray arrayWithObjects:@"bopeep",@"kingarthur",@"littleman", nil];
+    titleimagelist = [NSMutableArray arrayWithObjects:@"bopeep1.jpg",@"kingarthur1.png",@"littleman1.png", nil];
 }
 -(void)initTitleList{
-    titlelist = [NSMutableArray arrayWithObjects:@"bopeep",@"kingarthur",@"littleman", nil];
+    titlelist = [NSMutableArray arrayWithObjects:@"Little Bo Peep",@"Good King Arthur",@"There was a Little Man", nil];
 }
 -(void) initStories{
     NSMutableArray *bopeep = [NSMutableArray arrayWithObjects:
@@ -89,6 +89,8 @@
     if (self = [super init]) {
         [self initStories];
         [self initImages];
+        [self initTitleList];
+        [self initTitleImages];
     }
     return self;
 }

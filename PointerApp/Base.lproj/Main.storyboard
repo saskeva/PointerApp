@@ -126,13 +126,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="wIr-1G-49f">
-                                <rect key="frame" x="50" y="200" width="500" height="500"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="500" id="0RD-NL-b3d"/>
-                                    <constraint firstAttribute="width" constant="500" id="7oF-f7-zs5"/>
-                                </constraints>
-                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KrJ-8L-jgg">
                                 <rect key="frame" x="250" y="394" width="100" height="100"/>
                                 <constraints>
@@ -162,6 +155,13 @@
                                 </attributedString>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="wIr-1G-49f">
+                                <rect key="frame" x="52" y="85" width="427" height="176"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="500" id="0RD-NL-b3d"/>
+                                    <constraint firstAttribute="width" constant="500" id="7oF-f7-zs5"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -181,6 +181,10 @@
                             </mask>
                         </variation>
                     </view>
+                    <connections>
+                        <outlet property="storyTitle" destination="mvf-Ec-PCi" id="gmE-hG-VoU"/>
+                        <outlet property="storyTitleImage" destination="wIr-1G-49f" id="Rpd-k7-Etw"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zVv-gU-hcQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

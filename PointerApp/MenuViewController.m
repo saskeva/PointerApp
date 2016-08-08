@@ -9,6 +9,7 @@
 #import "MenuViewController.h"
 #import "ViewController.h"
 #import "TitleViewController.h"
+#import "StoryLib.h"
 
 @interface MenuViewController ()
 
@@ -17,9 +18,15 @@
 @implementation MenuViewController
 
 - (void) viewDidLoad{
+    StoryLib *sharedList = [StoryLib sharedList];
+    for(int i = 0; i < (sizeof [sharedList getTitleList]); i++){
+        
+    }
     _storyindex = -1;
     [super viewDidLoad];
     //[NSThread sleepForTimeInterval:1.0];
+    
+    
 }
 - (IBAction)start{
     if(_storyindex != -1)
