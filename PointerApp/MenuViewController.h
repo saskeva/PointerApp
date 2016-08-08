@@ -10,15 +10,12 @@
 #import "UIButtonWithValue.h"
 #import "ViewController.h"
 
-@interface MenuViewController : UIViewController{
+@interface MenuViewController : UIViewController<UITableViewDelegate, UITableViewDataSource>{
 }
 @property(nonatomic) double speed;
 @property(nonatomic) int storyindex;
-@property (weak, nonatomic) IBOutlet UILabel *label;
 @property (weak, nonatomic) IBOutlet UIButton *button;
-@end
-
-@interface SimpleTableViewController : UIViewController <UITableViewDelegate, UITableViewDataSource>
+@property (strong, nonatomic) IBOutlet UITableView *storyTable;
 
 -(IBAction)start;
 -(IBAction)storyPressed:(UIControl *)sender;

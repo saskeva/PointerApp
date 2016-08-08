@@ -247,19 +247,11 @@
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                 </prototypes>
-                            </tableView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xlZ-GN-Mbv" customClass="UIButtonWithValue">
-                                <rect key="frame" x="58" y="75" width="46" height="30"/>
-                                <state key="normal" title="Button"/>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="keyValue">
-                                        <integer key="value" value="0"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <action selector="storyPressed:" destination="GCR-dN-IVJ" eventType="touchUpInside" id="K8X-ut-J3w"/>
+                                    <outlet property="dataSource" destination="GCR-dN-IVJ" id="gKM-c4-cKh"/>
+                                    <outlet property="delegate" destination="GCR-dN-IVJ" id="x90-1f-x4V"/>
                                 </connections>
-                            </button>
+                            </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -269,7 +261,7 @@
                             <constraint firstItem="mf7-oU-0PF" firstAttribute="top" secondItem="7Og-4W-TAu" secondAttribute="bottom" constant="50" id="N2c-An-qJF"/>
                             <constraint firstItem="1pP-Vf-Jlw" firstAttribute="top" secondItem="0eE-7n-OaB" secondAttribute="bottom" constant="235" id="POs-5b-Yhn"/>
                             <constraint firstItem="1pP-Vf-Jlw" firstAttribute="leading" secondItem="EIq-hp-4j1" secondAttribute="leadingMargin" constant="121" id="TYJ-5b-5in"/>
-                            <constraint firstItem="uBJ-m3-KfM" firstAttribute="top" secondItem="1pP-Vf-Jlw" secondAttribute="bottom" constant="20" id="UxO-SS-zvB"/>
+                            <constraint firstItem="uBJ-m3-KfM" firstAttribute="top" secondItem="1pP-Vf-Jlw" secondAttribute="bottom" constant="28" id="UxO-SS-zvB"/>
                             <constraint firstItem="uBJ-m3-KfM" firstAttribute="leading" secondItem="EIq-hp-4j1" secondAttribute="leadingMargin" constant="70" id="f3D-es-qGi"/>
                             <constraint firstItem="sYO-8Q-2WM" firstAttribute="bottom" secondItem="1pP-Vf-Jlw" secondAttribute="bottom" constant="-27" id="inW-YR-9dc"/>
                             <constraint firstItem="7Og-4W-TAu" firstAttribute="top" secondItem="uBJ-m3-KfM" secondAttribute="bottom" constant="20" id="n7u-Go-nhi"/>
@@ -277,6 +269,7 @@
                     </view>
                     <connections>
                         <outlet property="button" destination="7Og-4W-TAu" id="2n7-Ik-LMa"/>
+                        <outlet property="storyTable" destination="uBJ-m3-KfM" id="2Iw-gm-apO"/>
                         <segue destination="4Bs-zU-3D2" kind="show" identifier="bookchosen" id="PcM-u8-uVs"/>
                     </connections>
                 </viewController>

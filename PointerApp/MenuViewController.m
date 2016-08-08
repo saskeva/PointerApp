@@ -17,17 +17,30 @@
 
 @implementation MenuViewController
 
+NSArray *stories;
+
 - (void) viewDidLoad{
-    StoryLib *sharedList = [StoryLib sharedList];
-    for(int i = 0; i < (sizeof [sharedList getTitleList]); i++){
-        
-    }
     _storyindex = -1;
     [super viewDidLoad];
     //[NSThread sleepForTimeInterval:1.0];
+    [super viewDidLoad];
+    StoryLib *sharedList = [StoryLib sharedList];
+    stories = [sharedList getTitleList];
     
+    UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(didTapOnTableView:)];
+    [_storyTable addGestureRecognizer:tap];
     
 }
+
+-(void) didTapOnTableView:(UIGestureRecognizer *) recognizer {
+    CGPoint tapLocation = [recognizer locationInView:_storyTable];
+    NSIndexPath *indexPath = [_storyTable indexPathForRowAtPoint:tapLocation];
+    if (indexPath) {
+        _storyindex = (int)indexPath.row;
+        
+    }
+}
+
 - (IBAction)start{
     if(_storyindex != -1)
         [self performSegueWithIdentifier:@"bookchosen" sender:self];
@@ -58,5 +71,53 @@
         controller.storyindex = _storyindex;
     }
 }
+
+-(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+    return [stories count];
+}
+
+-(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(nonnull NSIndexPath *)indexPath {
+    static NSString *simpleTableIdentifier = @"SimpleTableCell";
+    
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:simpleTableIdentifier];
+    
+    if(cell == nil) {
+        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:simpleTableIdentifier];
+    }
+    
+    cell.textLabel.text = [stories objectAtIndex:indexPath.row];
+    return cell;
+}
+
+
 @end
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
