@@ -37,7 +37,7 @@ NSArray *stories;
     NSIndexPath *indexPath = [_storyTable indexPathForRowAtPoint:tapLocation];
     if (indexPath) {
         _storyindex = (int)indexPath.row;
-        
+        [_storyTable selectRowAtIndexPath:indexPath animated:NO scrollPosition:UITableViewScrollPositionNone];
     }
 }
 
